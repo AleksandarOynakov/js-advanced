@@ -1,11 +1,14 @@
 function coffee(orders) {
+
     let prices = { 'coffee caffeine': 0.80, 'coffee decaf': 0.90, 'tea': 0.80 };
     let income = 0;
+
     for (const order of orders) {
         let elements = order.split(', ');
         let moneyInserted = Number(elements.shift());
         let sugar = Number(elements.pop());
         let moneyNeeded = 0;
+
         for (let index = 0; index < elements.length; index++) {
             if (elements[index] === 'caffeine' || elements[index] === 'decaf') {
                 moneyNeeded += prices[elements[index - 1] + ' ' + elements[index]];
