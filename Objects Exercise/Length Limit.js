@@ -23,7 +23,7 @@ class Stringer {
         if (this.innerString.length > this.innerLength) {
             result.push('...');
         }
-        console.log(result.join(''));
+        return result.join('');
     }
 }
 
