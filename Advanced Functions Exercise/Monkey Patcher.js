@@ -56,5 +56,3 @@ let post = {
 solution.call(post, 'upvote');
 console.log(solution.call(post, 'score'));
 //[4, 5, -1, 'new'];
-
-
